@@ -197,8 +197,7 @@
   .tiles.three .tile h3 { font-size: clamp(40px, 4vw, 60px); }
   .tiles.quiet { margin-top: 14px; }
   .tiles.quiet.four { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-  .tiles.quiet .tile { min-height: 230px; padding: 22px 22px 20px; justify-content: flex-start; }
-  .tiles.quiet .tile h3 { min-height: 2.1em; display: flex; align-items: flex-end; }
+  .tiles.quiet .tile { min-height: 230px; padding: 22px 22px 20px; justify-content: flex-end; }
   .tiles.quiet .tile img.low { object-position: 50% 62%; }
   .tiles.quiet .tile img.low + svg + .shade { background: linear-gradient(180deg, rgba(0,0,0,.30) 0%, rgba(0,0,0,.55) 45%, rgba(0,0,0,.82) 100%); }
   .tiles.quiet .tile h3 { font-size: clamp(30px, 2.6vw, 40px); }
