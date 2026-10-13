@@ -200,6 +200,7 @@
   .tiles.quiet .tile { min-height: 230px; padding: 22px 22px 20px; }
   .tiles.quiet .tile h3 { font-size: clamp(30px, 2.6vw, 40px); }
   .tiles.quiet .tile p { font-size: 15px; }
+  .tiles.quiet .tile .shade { background: linear-gradient(180deg, rgba(0,0,0,.18) 0%, rgba(0,0,0,.42) 45%, rgba(0,0,0,.78) 100%); }
 
   /* ── Footer ── */
   footer {
