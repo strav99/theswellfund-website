@@ -232,8 +232,15 @@
   @media (max-width: 1100px) and (min-width: 901px) {
     .tiles.quiet.four { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   }
+  @media (max-width: 720px) {
+    header { flex-wrap: wrap; padding-bottom: 0; }
+    nav { width: calc(100% + 2 * var(--gutter)); margin: 8px calc(-1 * var(--gutter)) 0; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+    nav::-webkit-scrollbar { display: none; }
+    nav ul { flex-wrap: nowrap; justify-content: flex-start; gap: 22px; padding: 10px var(--gutter) 14px; width: max-content; }
+    nav a { white-space: nowrap; }
+    .now ul { flex-direction: column; gap: 10px; }
+  }
   @media (max-width: 520px) {
-    nav ul { gap: 14px 18px; }
     .hero h1 { font-size: clamp(64px, 19vw, 96px); }
   }
 
