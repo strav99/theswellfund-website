@@ -96,7 +96,7 @@
   .hero-photo img.scene {
     position: absolute; inset: 0;
     width: 100%; height: 100%;
-    object-fit: cover; object-position: 42% 45%;
+    object-fit: cover; object-position: 80% 45%;
   }
   .hero-photo .facets {
     position: absolute; inset: 0;
@@ -320,11 +320,10 @@
   .gallery {
     padding: 0 var(--gutter);
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 14px;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 8px;
   }
   .gallery figure { margin: 0; aspect-ratio: 4 / 3; overflow: hidden; background: var(--bone); }
-  .gallery figure:nth-child(7n+1) { grid-column: span 2; aspect-ratio: 8 / 3; }
   .gallery img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
   .deck {
@@ -349,14 +348,12 @@
   .deck-strip img { width: 100%; height: auto; display: block; background: var(--white); }
 
   @media (max-width: 900px) {
-    .gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    .gallery figure:nth-child(7n+1) { grid-column: span 2; aspect-ratio: 2 / 1; }
+    .gallery { grid-template-columns: repeat(3, minmax(0, 1fr)); }
     .deck { grid-template-columns: 1fr; }
     .deck-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   }
   @media (max-width: 520px) {
-    .gallery { grid-template-columns: 1fr; }
-    .gallery figure:nth-child(7n+1) { grid-column: span 1; aspect-ratio: 4 / 3; }
+    .gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   }
 
   /* ── Projects ── */
